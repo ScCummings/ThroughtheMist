@@ -6,22 +6,24 @@ public class CameraFollow : MonoBehaviour
 {
     public float minDistance;
     public float cameraVelocity;
+    public Vector3 offset; 
     public GameObject target;
-    Vector2 targetPos;
+    Vector3 targetPos;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         targetPos = transform.position;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-            Vector2 pos = transform.position;
-            Vector2 targetDirection = (target.transform.position - transform.position);
+    void Update() {
+        if (target) {
+            Vector3 posNoZ = transform.position;
+            posNoZ.z = target.transform.position.z;
+            Vector3 targetDirection = (target.transform.position - posNoZ);
             cameraVelocity = targetDirection.magnitude * 5f;
-            //targetPos = transform.position + (targetDirection.normalized * cameraVelocity * Time.deltaTime);
-            transform.position = Vector2.Lerp(transform.position, targetPos, 0.25f);
+            targetPos = transform.position + (targetDirection.normalized * cameraVelocity * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, targetPos + offset, 0.25f);
+        }
     }
 }
