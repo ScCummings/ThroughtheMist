@@ -320,6 +320,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: YoungerBrother
       objectReference: {fileID: 0}
+    - target: {fileID: -7436424476399699170, guid: 8e11381efa7200a43a2b7fd8781f35b1,
+        type: 3}
+      propertyPath: viewIdField
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3131766512130191065, guid: 8e11381efa7200a43a2b7fd8781f35b1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -374,11 +379,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7436424476399699170, guid: 8e11381efa7200a43a2b7fd8781f35b1,
-        type: 3}
-      propertyPath: viewIdField
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3131766512130191066, guid: 8e11381efa7200a43a2b7fd8781f35b1,
         type: 3}
