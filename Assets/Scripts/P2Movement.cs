@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class P2Movement : MonoBehaviour
 {
     Rigidbody2D body;
 
@@ -19,14 +19,9 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontal = Input.GetAxisRaw("P1Horizontal");
-        float vertical = Input.GetAxisRaw("P1Vertical");
+        float horizontal = Input.GetAxisRaw("P2Horizontal");
+        float vertical = Input.GetAxisRaw("P2Vertical");
         body.velocity = new Vector2(horizontal, vertical);
-
-    }
-
-    private void FixedUpdate()
-    {
 
     }
 }
