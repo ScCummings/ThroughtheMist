@@ -247,7 +247,8 @@ MonoBehaviour:
   minDistance: 1
   cameraVelocity: 1
   offset: {x: 0, y: 0, z: 0}
-  target: {fileID: 280272714}
+  targets:
+  - {fileID: 280272714}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -275,7 +276,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.13
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -12095,15 +12096,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2099735107918084245, guid: 7dac33895f399284e8b463d3e2d9400c,
-        type: 3}
-      propertyPath: m_canMove
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2099735107918084203, guid: 7dac33895f399284e8b463d3e2d9400c,
         type: 3}
       propertyPath: m_SortingOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099735107918084245, guid: 7dac33895f399284e8b463d3e2d9400c,
+        type: 3}
+      propertyPath: m_canMove
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dac33895f399284e8b463d3e2d9400c, type: 3}
