@@ -8,7 +8,7 @@ public class DowntownSceneGoal : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision) {
         if (GameManager.Instance != null && GameManager.Instance.isNetworked) {
-            PhotonNetwork.Disconnect();
+            //PhotonNetwork.Disconnect();
             GameManager.Instance.isNetworked = false;
             SceneManager.LoadScene("Menu");
         } else {
