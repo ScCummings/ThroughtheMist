@@ -29,27 +29,27 @@ public class SubwayPuzzle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             Debug.Log("zero input recognized");
-            GetComponent<Image>().sprite = EmptyPiece;
+            GetComponent<SpriteRenderer>().sprite = EmptyPiece;
         }
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            GetComponent<Image>().sprite = RubyPiece;
+            GetComponent<SpriteRenderer>().sprite = RubyPiece;
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            GetComponent<Image>().sprite = TurquoisePiece;
+            GetComponent<SpriteRenderer>().sprite = TurquoisePiece;
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            GetComponent<Image>().sprite = AmythystPiece;
+            GetComponent<SpriteRenderer>().sprite = AmythystPiece;
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            GetComponent<Image>().sprite = DiamondPiece;
+            GetComponent<SpriteRenderer>().sprite = DiamondPiece;
         }
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            GetComponent<Image>().sprite = EmeraldPiece;
+            GetComponent<SpriteRenderer>().sprite = EmeraldPiece;
         }
         isComplete = true;
     }
