@@ -12,10 +12,13 @@ public class YoungerBrotherMovement : MonoBehaviourPunCallbacks {
     // Start is called before the first frame update
     void Start() {
         body = GetComponent<Rigidbody2D>();
+        if(GameManager.Instance != null && GameManager.Instance.isNetworked) {
             if (PhotonNetwork.IsMasterClient) {
                 GetComponent<PhotonView>().RequestOwnership();
-            } else {
+            }
+            else {
                 GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.PlayerListOthers[0]);
+            }
         }
     }
 
