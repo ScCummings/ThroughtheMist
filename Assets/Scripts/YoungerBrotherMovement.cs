@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class P2Movement : MonoBehaviour
+public class YoungerBrotherMovement : MonoBehaviour
 {
     Rigidbody2D body;
 
