@@ -15,8 +15,13 @@ public class YoungerBrotherMovement : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        float horizontal = Input.GetAxisRaw("P2Horizontal");
-        float vertical = Input.GetAxisRaw("P2Vertical");
-        body.velocity = new Vector2(horizontal, vertical) * runSpeed;
+        if(GameManager.Instance != null && GameManager.Instance.isNetworked) {
+            //TODO: Implement Photon Code Here
+            body.velocity = Vector2.zero;
+        } else {
+            float horizontal = Input.GetAxisRaw("P2Horizontal");
+            float vertical = Input.GetAxisRaw("P2Vertical");
+            body.velocity = new Vector2(horizontal, vertical) * runSpeed;
+        }
     }
 }

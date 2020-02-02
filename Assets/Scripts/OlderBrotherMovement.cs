@@ -17,12 +17,17 @@ public class OlderBrotherMovement : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (m_canMove) {
-            float horizontal = Input.GetAxisRaw("P1Horizontal");
-            float vertical = Input.GetAxisRaw("P1Vertical");
-            body.velocity = new Vector2(horizontal, vertical) * runSpeed;
-        } else {
+        if(GameManager.Instance != null && GameManager.Instance.isNetworked) {
+            //TODO: Implement Photon Stuff
             body.velocity = Vector2.zero;
+        } else {
+            if (m_canMove) {
+                float horizontal = Input.GetAxisRaw("P1Horizontal");
+                float vertical = Input.GetAxisRaw("P1Vertical");
+                body.velocity = new Vector2(horizontal, vertical) * runSpeed;
+            } else {
+                body.velocity = Vector2.zero;
+            }
         }
     }
     public void setCanMove(bool canMove)
