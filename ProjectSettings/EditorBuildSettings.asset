@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Downtown.unity
     guid: 4fc8dd56b90604a82bfa7363d9e556a6
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 7d551abdea3ae493f98970a8b1448a5b
   m_configObjects: {}
