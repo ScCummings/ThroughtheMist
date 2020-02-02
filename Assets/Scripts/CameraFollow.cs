@@ -27,7 +27,7 @@ public class CameraFollow : MonoBehaviour
             if(targets.Length > 1) {
                 targetDirection = ((targets[0].transform.position + targets[1].transform.position) / 2 - posNoZ);
                 Debug.Log("DISTANCE FROM A TO B: " + Vector2.Distance(targets[0].transform.position, targets[1].transform.position));
-                float targetSize = Mathf.Pow(Vector2.Distance(targets[0].transform.position, targets[1].transform.position), 0.7f);
+                float targetSize = Mathf.Pow(Vector2.Distance(targets[0].transform.position, targets[1].transform.position), 0.8f);
                 if(targetSize < minSize) {
                     targetSize = minSize;
                 } else if(targetSize > maxSize) {
