@@ -6,37 +6,37 @@ public class SendRaycast : MonoBehaviour
 {
 
     bool keepGoing;
-    Collider2D raycastCollider; 
+    bool playerLooking;
+    LineRenderer lr;
+    GameObject playerRef;
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         keepGoing = true;
+        lr = GetComponent<LineRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-     
-    }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        Debug.Log("OnCollisionStay");
-        if (keepGoing && collision.gameObject.tag == "OlderBrother")
-        {
-            Debug.Log("Makes it into if statement");
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, collision.gameObject.transform.position - transform.position);
-            Debug.Log("RayastSent");
-            if (hit.collider.gameObject.tag != "OlderBrother")
-            {
+    private void Update() {
+        if(playerLooking) {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, playerRef.transform.position - transform.position);
+            if (hit.collider.gameObject.tag != "OlderBrother") {
                 keepGoing = false;
-                collision.gameObject.GetComponent<OlderBrotherMovement>().setCanMove(true);
+                playerRef.GetComponent<OlderBrotherMovement>().setCanMove(true);
+                lr.enabled = false;
+                Destroy(this.gameObject);
             } else {
-
-                //TODO: Paralye the older brother here OR unparalye him above
-                collision.gameObject.GetComponent<OlderBrotherMovement>().setCanMove(false);
-
+                playerRef.GetComponent<OlderBrotherMovement>().setCanMove(false);
+                Vector3[] positions = new Vector3[2];
+                positions[0] = transform.position;
+                positions[1] = playerRef.transform.position;
+                lr.SetPositions(positions);
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D col) {
+        if (keepGoing && col.gameObject.tag == "OlderBrother") {
+            playerLooking = true;
+            playerRef = col.gameObject;
         }
     }
 }
