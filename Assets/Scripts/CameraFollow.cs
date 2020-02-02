@@ -22,7 +22,7 @@ public class CameraFollow : MonoBehaviour
         if (target)
         {
             Vector3 posNoZ = transform.position;
-            posNoZ.z = target.transform.position.z;
+            posNoZ.z = target.transform.position.z * -1;
             Vector3 targetDirection = (target.transform.position - posNoZ);
             cameraVelocity = targetDirection.magnitude * 5f;
             targetPos = transform.position + (targetDirection.normalized * cameraVelocity * Time.deltaTime);
