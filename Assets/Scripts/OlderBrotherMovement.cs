@@ -7,7 +7,7 @@ public class OlderBrotherMovement : MonoBehaviour {
 
     float horizontal;
     float vertical;
-    bool m_canMove = true;
+    [SerializeField] bool m_canMove = true;
 
     public float runSpeed = 5.0f;
     // Start is called before the first frame update

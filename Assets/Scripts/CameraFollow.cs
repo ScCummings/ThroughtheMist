@@ -11,16 +11,13 @@ public class CameraFollow : MonoBehaviour
     Vector3 targetPos;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         targetPos = transform.position;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (target)
-        {
+    void Update() {
+        if (target) {
             Vector3 posNoZ = transform.position;
             posNoZ.z = target.transform.position.z * -1;
             Vector3 targetDirection = (target.transform.position - posNoZ);
