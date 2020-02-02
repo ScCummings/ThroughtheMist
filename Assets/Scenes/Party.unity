@@ -392,6 +392,8 @@ GameObject:
   - component: {fileID: 562930493}
   - component: {fileID: 562930492}
   - component: {fileID: 562930495}
+  - component: {fileID: 562930496}
+  - component: {fileID: 562930497}
   m_Layer: 0
   m_Name: Particle System (2)
   m_TagString: Untagged
@@ -5182,6 +5184,35 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &562930496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562930491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33149a1afc0a14bcc82c6894992cd615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FogHasBeenCleared: 0
+--- !u!58 &562930497
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562930491}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 19.132727, y: -0}
+  serializedVersion: 2
+  m_Radius: 15.658846
 --- !u!1 &585616041
 GameObject:
   m_ObjectHideFlags: 0
@@ -7239,6 +7270,8 @@ GameObject:
   - component: {fileID: 985127210}
   - component: {fileID: 985127209}
   - component: {fileID: 985127212}
+  - component: {fileID: 985127213}
+  - component: {fileID: 985127214}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -12029,6 +12062,35 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &985127213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985127208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33149a1afc0a14bcc82c6894992cd615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FogHasBeenCleared: 0
+--- !u!58 &985127214
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985127208}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 7.996168, y: -40.206127}
+  serializedVersion: 2
+  m_Radius: 6.5313554
 --- !u!1001 &1314801224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12096,15 +12158,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2099735107918084203, guid: 7dac33895f399284e8b463d3e2d9400c,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 2099735107918084245, guid: 7dac33895f399284e8b463d3e2d9400c,
         type: 3}
       propertyPath: m_canMove
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099735107918084203, guid: 7dac33895f399284e8b463d3e2d9400c,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dac33895f399284e8b463d3e2d9400c, type: 3}
@@ -12292,6 +12354,8 @@ GameObject:
   - component: {fileID: 1609866109}
   - component: {fileID: 1609866108}
   - component: {fileID: 1609866111}
+  - component: {fileID: 1609866112}
+  - component: {fileID: 1609866113}
   m_Layer: 0
   m_Name: Particle System (1)
   m_TagString: Untagged
@@ -17082,6 +17146,35 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1609866112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609866107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33149a1afc0a14bcc82c6894992cd615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FogHasBeenCleared: 0
+--- !u!58 &1609866113
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609866107}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 10.312992, y: 620045.06}
+  serializedVersion: 2
+  m_Radius: 8.523282
 --- !u!1 &1837686319
 GameObject:
   m_ObjectHideFlags: 0
@@ -18489,3 +18582,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1189778a33fa54f42ba318fa32bfd1ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cf: {fileID: 562930496}
