@@ -3427,6 +3427,7 @@ GameObject:
   - component: {fileID: 194185867}
   - component: {fileID: 194185866}
   - component: {fileID: 194185870}
+  - component: {fileID: 194185871}
   m_Layer: 0
   m_Name: Particle System (1)
   m_TagString: Untagged
@@ -8246,6 +8247,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FogHasBeenCleared: 0
+--- !u!114 &194185871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194185864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 20
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &216270849
 GameObject:
   m_ObjectHideFlags: 0
@@ -8925,11 +8948,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: YoungerBrother
       objectReference: {fileID: 0}
-    - target: {fileID: -7436424476399699170, guid: 8e11381efa7200a43a2b7fd8781f35b1,
-        type: 3}
-      propertyPath: viewIdField
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3131766512130191065, guid: 8e11381efa7200a43a2b7fd8781f35b1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8985,6 +9003,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7436424476399699170, guid: 8e11381efa7200a43a2b7fd8781f35b1,
+        type: 3}
+      propertyPath: viewIdField
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e11381efa7200a43a2b7fd8781f35b1, type: 3}
 --- !u!1 &604885908 stripped
@@ -9007,6 +9030,7 @@ GameObject:
   - component: {fileID: 614395335}
   - component: {fileID: 614395334}
   - component: {fileID: 614395338}
+  - component: {fileID: 614395339}
   m_Layer: 0
   m_Name: Particle System (1)
   m_TagString: Untagged
@@ -13826,6 +13850,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FogHasBeenCleared: 0
+--- !u!114 &614395339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614395332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 19
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &634777137
 GameObject:
   m_ObjectHideFlags: 0
@@ -13919,6 +13965,7 @@ GameObject:
   - component: {fileID: 687202124}
   - component: {fileID: 687202123}
   - component: {fileID: 687202122}
+  - component: {fileID: 687202127}
   m_Layer: 0
   m_Name: Particle System (2)
   m_TagString: Untagged
@@ -18738,6 +18785,28 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &687202127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687202120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 18
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &817825075
 GameObject:
   m_ObjectHideFlags: 0
@@ -25498,6 +25567,7 @@ GameObject:
   - component: {fileID: 967330623}
   - component: {fileID: 967330622}
   - component: {fileID: 967330626}
+  - component: {fileID: 967330627}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -30317,6 +30387,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FogHasBeenCleared: 0
+--- !u!114 &967330627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967330620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 17
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &977711905
 GameObject:
   m_ObjectHideFlags: 0
@@ -30331,6 +30423,7 @@ GameObject:
   - component: {fileID: 977711909}
   - component: {fileID: 977711908}
   - component: {fileID: 977711907}
+  - component: {fileID: 977711912}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -35150,6 +35243,28 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &977711912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977711905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 16
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &988668499
 GameObject:
   m_ObjectHideFlags: 0
@@ -35164,6 +35279,7 @@ GameObject:
   - component: {fileID: 988668503}
   - component: {fileID: 988668502}
   - component: {fileID: 988668501}
+  - component: {fileID: 988668506}
   m_Layer: 0
   m_Name: Particle System (1)
   m_TagString: Untagged
@@ -39983,6 +40099,28 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &988668506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988668499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 15
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1108067916
 GameObject:
   m_ObjectHideFlags: 0
@@ -54500,6 +54638,7 @@ GameObject:
   - component: {fileID: 1247053450}
   - component: {fileID: 1247053449}
   - component: {fileID: 1247053453}
+  - component: {fileID: 1247053454}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -59319,6 +59458,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FogHasBeenCleared: 0
+--- !u!114 &1247053454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247053447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 14
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1261482476
 GameObject:
   m_ObjectHideFlags: 0
@@ -59333,6 +59494,7 @@ GameObject:
   - component: {fileID: 1261482480}
   - component: {fileID: 1261482478}
   - component: {fileID: 1261482479}
+  - component: {fileID: 1261482483}
   m_Layer: 0
   m_Name: Particle System (1)
   m_TagString: Untagged
@@ -64152,6 +64314,28 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1261482483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261482476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 13
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1293770316
 GameObject:
   m_ObjectHideFlags: 0
@@ -69078,6 +69262,7 @@ GameObject:
   - component: {fileID: 1536694945}
   - component: {fileID: 1536694944}
   - component: {fileID: 1536694948}
+  - component: {fileID: 1536694949}
   m_Layer: 0
   m_Name: Particle System (2)
   m_TagString: Untagged
@@ -73897,6 +74082,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FogHasBeenCleared: 0
+--- !u!114 &1536694949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536694942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 12
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1783490951
 GameObject:
   m_ObjectHideFlags: 0
@@ -73911,6 +74118,7 @@ GameObject:
   - component: {fileID: 1783490954}
   - component: {fileID: 1783490953}
   - component: {fileID: 1783490957}
+  - component: {fileID: 1783490958}
   m_Layer: 0
   m_Name: Particle System (2)
   m_TagString: Untagged
@@ -78730,6 +78938,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FogHasBeenCleared: 0
+--- !u!114 &1783490958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783490951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 11
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1805732984
 GameObject:
   m_ObjectHideFlags: 0
@@ -78744,6 +78974,7 @@ GameObject:
   - component: {fileID: 1805732988}
   - component: {fileID: 1805732986}
   - component: {fileID: 1805732987}
+  - component: {fileID: 1805732991}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -83563,6 +83794,28 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1805732991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805732984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 10
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1818555099
 GameObject:
   m_ObjectHideFlags: 0
@@ -88457,6 +88710,7 @@ GameObject:
   - component: {fileID: 1828188707}
   - component: {fileID: 1828188705}
   - component: {fileID: 1828188706}
+  - component: {fileID: 1828188710}
   m_Layer: 0
   m_Name: Particle System (2)
   m_TagString: Untagged
@@ -93276,6 +93530,28 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1828188710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828188703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 9
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &2007901194
 GameObject:
   m_ObjectHideFlags: 0
