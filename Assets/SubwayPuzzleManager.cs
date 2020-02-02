@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,7 +18,13 @@ public class SubwayPuzzleManager : MonoBehaviour
             }
         }
         if(solved) {
-            SceneManager.LoadScene("Downtown");
+            if (GameManager.Instance != null && GameManager.Instance.isNetworked) {
+                if (PhotonNetwork.IsMasterClient) {
+                    PhotonNetwork.LoadLevel("Downtown");
+                }
+            } else {
+                SceneManager.LoadScene("Downtown");
+            }
         }
     }
 }

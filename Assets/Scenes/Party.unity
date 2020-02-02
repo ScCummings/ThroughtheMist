@@ -249,6 +249,8 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0}
   targets:
   - {fileID: 280272714}
+  maxSize: 10
+  minSize: 4
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -313,6 +315,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7436424476399699170, guid: 8e11381efa7200a43a2b7fd8781f35b1,
+        type: 3}
+      propertyPath: viewIdField
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3131766512130191061, guid: 8e11381efa7200a43a2b7fd8781f35b1,
         type: 3}
       propertyPath: m_Name
@@ -12105,6 +12112,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_canMove
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415132131862912826, guid: 7dac33895f399284e8b463d3e2d9400c,
+        type: 3}
+      propertyPath: viewIdField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dac33895f399284e8b463d3e2d9400c, type: 3}
